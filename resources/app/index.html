@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js" integrity="sha512-Xo0Jh8MsOn72LGV8kU5LsclG7SUzJsWGhXbWcYs2MAmChkQzwiW/yTQwdJ8w6UA9C6EVG18GHb/TrYpYCjyAQw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css" integrity="sha512-KXol4x3sVoO+8ZsWPFI/r5KBVB/ssCGB5tsv2nVOKwLg33wTFP3fmnXa47FdSVIshVTgsYk/1734xSk9aFIa4A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>RAM-CPU Monitor</title>
+    <style>
+      body{
+        padding: 10px;
+      }
+      i{
+        font-size: 30px;
+      }
+      #cpu, #ram{
+        font-size: 30px;
+        width: 100px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+  <div class="ui statistics">
+    <div class="statistic">
+      <div class="value">
+        <i style="font-size: 30px" class="server icon"></i><span id="cpu"></span>
+      </div>
+      <div class="label">
+        CPU Usage
+      </div>
+    </div>
+
+    <div class="statistic">
+      <div class="value">
+        <i style="font-size: 30px" class="microchip icon"></i><span id="ram"></span>
+      </div>
+      <div class="label">
+        FREE RAM
+      </div>
+    </div>
+  </div>
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>
